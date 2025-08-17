@@ -23,8 +23,9 @@ def select_word(filename): # Select the secret word to guess from Wordle's offic
 
 # Checks the assortment and validity of the user's guess/input
 def check_if_valid(guess, guesses):
-    for i in tqdm(range(74)): # Loading bar for one second
-        time.sleep(1/74)
+    loading_length = 74
+    for i in tqdm(range(loading_length)): # Loading bar for one second
+        time.sleep(1/loading_length)
     print('Nice guess!')
     
     if len(guess) == 5 and guess in guesses:
