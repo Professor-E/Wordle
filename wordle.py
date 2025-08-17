@@ -8,7 +8,7 @@ import time
 from tqdm import tqdm
 
 
-def load_dictionary(filepath):
+def load_dictionary(filepath): # Load "guesses.txt" file to confirm a valid word within the English dictionary
     with open(filepath) as f:
         words = [line.strip() for line in f]
     return words
